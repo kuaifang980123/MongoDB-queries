@@ -1,0 +1,53 @@
+-bash: export: `PATH/Users/apple/mongodb-database-tools-macos-x86_64-100.0.1/bin:/Users/apple/mongodb-database-tools-macos-x86_64-100.0.1/bin:/Users/apple/anaconda3/bin:/Users/apple/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/apple/anaconda3/share/proj': not a valid identifier
+(base) appledeMacBook-Pro:~ apple$ /Users/apple/mongodb-macos-x86_64-4.2.7/bin/mongo
+MongoDB shell version v4.2.7
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a8118d51-7174-4ecc-b3f8-32658c82c4ce") }
+MongoDB server version: 4.2.7
+Server has startup warnings: 
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] 
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] 
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2020-06-07T20:30:01.540-0700 I  CONTROL  [initandlisten] 
+---
+Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+and anyone you share the URL with. MongoDB may use this information to make product
+improvements and to suggest MongoDB products and deployment options to you.
+
+To enable free monitoring, run the following command: db.enableFreeMonitoring()
+To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+
+> db.nyt2.aggregate([{$group:{_id:"$publisher",num_book:{$sum:1}}}])
+{ "_id" : "Flatiron Books", "num_book" : 2 }
+{ "_id" : "Putnam", "num_book" : 1061 }
+{ "_id" : "Forge", "num_book" : 13 }
+{ "_id" : "St. Martin‘s", "num_book" : 2 }
+{ "_id" : "HarperCollins", "num_book" : 2 }
+{ "_id" : "Berkley", "num_book" : 74 }
+{ "_id" : "Penguin Group", "num_book" : 1 }
+{ "_id" : "Atria/Emily Bestler", "num_book" : 10 }
+{ "_id" : "LucasBooks", "num_book" : 20 }
+{ "_id" : "Little, Brown and Knopf", "num_book" : 5 }
+{ "_id" : "Viking, $24.95", "num_book" : 1 }
+{ "_id" : "Marian Wood/Putnam", "num_book" : 34 }
+{ "_id" : "Tor", "num_book" : 28 }
+{ "_id" : "Pantheon", "num_book" : 39 }
+{ "_id" : "Bantam", "num_book" : 319 }
+{ "_id" : "Penguin Group (USA) Incorporated", "num_book" : 4 }
+{ "_id" : "Del Rey", "num_book" : 65 }
+{ "_id" : "W. W. Norton", "num_book" : 1 }
+{ "_id" : "Amistad/HarperCollins", "num_book" : 2 }
+{ "_id" : "Riverhead", "num_book" : 199 }
+Type "it" for more
+> 

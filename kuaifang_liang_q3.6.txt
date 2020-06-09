@@ -1,0 +1,33 @@
+-bash: export: `PATH/Users/apple/mongodb-database-tools-macos-x86_64-100.0.1/bin:/Users/apple/mongodb-database-tools-macos-x86_64-100.0.1/bin:/Users/apple/anaconda3/bin:/Users/apple/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/apple/anaconda3/share/proj': not a valid identifier
+(base) appledeMacBook-Pro:~ apple$ /Users/apple/mongodb-macos-x86_64-4.2.7/bin/mongo
+MongoDB shell version v4.2.7
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("2119390a-57b3-4ac2-8bb5-bbf78702b4fc") }
+MongoDB server version: 4.2.7
+Server has startup warnings: 
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] 
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] 
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2020-06-07T20:30:01.535-0700 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2020-06-07T20:30:01.540-0700 I  CONTROL  [initandlisten] 
+---
+Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+and anyone you share the URL with. MongoDB may use this information to make product
+improvements and to suggest MongoDB products and deployment options to you.
+
+To enable free monitoring, run the following command: db.enableFreeMonitoring()
+To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+
+> db.nyt2.distinct("publisher").length
+176
+> 
